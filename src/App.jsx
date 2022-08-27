@@ -1,20 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
+import RealTime from "./RealTime";
 
 
 const App = () => {
 
-        var realTime = new Date().toLocaleTimeString();
-        const greetStyle = {}
-
-        const [ctime,setCtime] = useState(realTime)
-
-        const UpdateTimes = () => {
-            let ctime = new Date().toLocaleTimeString();
-            setCtime(ctime);
-        };
-
-
-        let time =new Date().getHours();
+    const greetStyle = {}
+    let time = new Date().getHours();
         let greeting = '';
             if (time<12){
                 greeting = 'Good Morning';
@@ -38,8 +29,7 @@ const App = () => {
             <div className="parent">
             <h1 className='heading'>Welcome to React Time App</h1>
             <h1 className='myname'>Made By 💖 Vikash Chaurasia</h1>
-            <h1 className="time">{ctime}</h1>
-            <button onClick={UpdateTimes}>Refresh</button>
+            <RealTime />
             <div className="child">
             <h1 className="hsir">Hello Sir , <span style={greetStyle}>{greeting}</span></h1>
             </div>

@@ -28,6 +28,7 @@ body{
   margin: 1rem 10rem 0rem;
   border-radius: 115px;
   background-color: rgb(220, 207, 207);
+  transition: transform 0.5s;
 }
 .time{
   font-size: 6rem;
@@ -36,18 +37,8 @@ body{
   text-shadow: 2px 2px 5px red;
   display: block;
 }
-button{
-  margin-top: 0px;
-  color:rgb(8, 18, 8);
-  font-weight:500;
-  background-color:rgb(197, 198, 199);
-  width:10rem;
-  height:3rem;
-  border-radius: 2rem;
-  font-size: 1.4rem;
-  transition: transform 0.5s;
-}
-button:hover{
+
+.child:hover{
   color: #111;
   background: #39ff14;
   box-shadow: 0 0 30px #39ff14;

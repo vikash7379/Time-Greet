@@ -5,4 +5,9 @@ import './index.css';
 
 const root = ReactDom.createRoot(document.getElementById('root'))
 
-root.render(<App/>)
+root.render(
+    <>
+        <App/>
+    </>
+
+)
